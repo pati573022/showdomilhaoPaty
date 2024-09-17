@@ -1,7 +1,5 @@
 
 
-using System.Reflection.Emit;
-
 public class Questao
 {
     public Questao()
@@ -60,6 +58,10 @@ public class Questao
         }
         else
         {
+            var ButtonCorreto= QualButton (respostaorreta);
+            var ButtonIncorreto= QualButton (RR);
+            ButtonCorreto.BackgroundColor = Colors.Yellow;
+            ButtonIncorreto.BackgroundColor = Colors.Red;
             return false;
 }
 
@@ -70,6 +72,13 @@ public class Questao
     return btResposta01;
     else if (RR == 2)
     return btResposta02;
+    else if (RR == 3)
+    return btResposta03;
+    else if (RR == 4)
+    return btResposta04;
+    else if (RR == 5)
+    return btResposta05;
+    
  }
  
 }
