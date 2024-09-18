@@ -8,13 +8,13 @@
      <Grid>
           <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
-                <RowDefinition Height="100"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="100"/>
+                <RowDefinition Height="90"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="70"/>
           </Grid.RowDefinitions>
           <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -29,7 +29,7 @@
                  Grid.RowSpan="8"
                  Grid.ColumnSpan="3"/>
 
-          <Frame Opacity=".6"
+          <Frame BackgroundColor="#77ffffff"
                  CornerRadius="20" 
                  BorderColor="Black"
                  Grid.Row="1"
@@ -44,7 +44,7 @@
 
                     <Button Text="A-"
                             BorderWidth="2"
-                            BackgroundColor="White"
+                            BackgroundColor="#CD6EE8"
                             TextColor="Black"
                             Margin="0,0,0,10"
                             FontSize="18"
@@ -55,7 +55,7 @@
 
                     <Button Text="B-"
                             BorderWidth="2"
-                            BackgroundColor="White"
+                            BackgroundColor="#CD6EE8"
                             TextColor="Black"
                             Margin="0,0,0,10"
                             FontSize="18"
@@ -66,7 +66,7 @@
 
                     <Button Text="C-"
                             BorderWidth="2"
-                            BackgroundColor="White"
+                            BackgroundColor="#CD6EE8"
                             TextColor="Black"
                             Margin="0,0,0,10"
                             FontSize="18"
@@ -77,7 +77,7 @@
 
                     <Button Text="D-"
                             BorderWidth="2"
-                            BackgroundColor="White"
+                            BackgroundColor="#CD6EE8"
                             TextColor="Black"
                             Margin="0,0,0,10"
                             FontSize="18"
@@ -88,7 +88,7 @@
 
                     <Button Text="E-"
                             BorderWidth="2"
-                            BackgroundColor="White"
+                            BackgroundColor="#CD6EE8"
                             TextColor="Black"
                             Margin="0,0,0,10"
                             FontSize="18"
@@ -102,7 +102,7 @@
                                 BorderWidth="2"
                                 Padding=".12"
                                 TextColor="Black"
-                                BackgroundColor="White"
+                                BackgroundColor="#D29D00"
                                 Margin="0,0,0,10"
                                 FontSize="18"
                                 BorderColor="Black"
@@ -113,7 +113,7 @@
                                 BorderWidth="2"
                                 Padding=".12"
                                 TextColor="Black"
-                                BackgroundColor="White"
+                                BackgroundColor="#D29D00"
                                 Margin="0,0,0,10"
                                 FontSize="18"
                                 BorderColor="Black"
@@ -124,7 +124,7 @@
                               BorderWidth="2"
                               Padding=".12"
                               TextColor="Black"
-                              BackgroundColor="White"
+                              BackgroundColor="#D29D00"
                               Margin="0,0,0,10"
                               FontSize="18"
                               BorderColor="Black"
