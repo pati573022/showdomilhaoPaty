@@ -1,42 +1,135 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SeuProjeto.JogoDoMilhaoPage"
-             BackgroundColor="Black">
+             x:Class="showdomilhaoPaty.MainPage"
+             Shell.NavBarIsVisible="false">
 
-    <!-- Background Image -->
-    <Grid>
-        <Image Source="background_milhao.jpg" Aspect="AspectFill" />
-        
-        <!-- Overlay Content -->
-        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="20">
+    
+     <Grid>
+          <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="100"/>
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+         </Grid.ColumnDefinitions>
 
-            <!-- Título -->
-            <Label Text="JOGO DO MILHÃO"
-                   FontSize="48"
-                   TextColor="Gold"
-                   FontAttributes="Bold"
-                   HorizontalOptions="Center"/>
+          <Image Source="showdomilhao.png"
+                 Aspect="AspectFill"
+                 Grid.Row="0"
+                 Grid.Column="0"
+                 Grid.RowSpan="8"
+                 Grid.ColumnSpan="3"/>
 
-            <!-- Imagem principal -->
-            <Image Source="game_show_contestants.jpg" 
-                   Aspect="AspectFit"
-                   WidthRequest="300"
-                   HeightRequest="200" />
+          <Frame Opacity=".6"
+                 CornerRadius="20" 
+                 BorderColor="Black"
+                 Grid.Row="1"
+                 Grid.ColumnSpan="3">
+               
+          <Label Text="Questão:" 
+                 HorizontalTextAlignment="Center" 
+                 FontSize="18"
+                 TextColor="Black"/>
 
-            <!-- Botão "Começar" -->
-            <Button Text="COMEÇAR"
-                    BackgroundColor="Purple"
-                    TextColor="Gold"
-                    FontAttributes="Bold"
-                    FontSize="24"
-                    WidthRequest="200"
-                    HeightRequest="60"
-                    CornerRadius="30"
-                    HorizontalOptions="Center"/>
+            </Frame>     
 
-        </VerticalStackLayout>
-    </Grid>
+                    <Button Text="A-"
+                            BorderWidth="2"
+                            BackgroundColor="White"
+                            TextColor="Black"
+                            Margin="0,0,0,10"
+                            FontSize="18"
+                            BorderColor="Black"
+                            Grid.Row="2"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="3"/>
 
-</ContentPage>
+                    <Button Text="B-"
+                            BorderWidth="2"
+                            BackgroundColor="White"
+                            TextColor="Black"
+                            Margin="0,0,0,10"
+                            FontSize="18"
+                            BorderColor="Black"
+                            Grid.Row="3"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="3"/>
 
+                    <Button Text="C-"
+                            BorderWidth="2"
+                            BackgroundColor="White"
+                            TextColor="Black"
+                            Margin="0,0,0,10"
+                            FontSize="18"
+                            BorderColor="Black"
+                            Grid.Row="4"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="3"/>
+
+                    <Button Text="D-"
+                            BorderWidth="2"
+                            BackgroundColor="White"
+                            TextColor="Black"
+                            Margin="0,0,0,10"
+                            FontSize="18"
+                            BorderColor="Black"
+                            Grid.Row="5"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="3"/>
+
+                    <Button Text="E-"
+                            BorderWidth="2"
+                            BackgroundColor="White"
+                            TextColor="Black"
+                            Margin="0,0,0,10"
+                            FontSize="18"
+                            BorderColor="Black"
+                            Grid.Row="6"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="3"/>
+
+               
+                        <Button Text="Corretas" 
+                                BorderWidth="2"
+                                Padding=".12"
+                                TextColor="Black"
+                                BackgroundColor="White"
+                                Margin="0,0,0,10"
+                                FontSize="18"
+                                BorderColor="Black"
+                                Grid.Row="7"
+                                Grid.Column="0"/>
+                               
+                       <Button Text="Retirar 1" 
+                                BorderWidth="2"
+                                Padding=".12"
+                                TextColor="Black"
+                                BackgroundColor="White"
+                                Margin="0,0,0,10"
+                                FontSize="18"
+                                BorderColor="Black"
+                                Grid.Row="7"
+                                Grid.Column="1"/>
+
+                      <Button Text="Universtários"  
+                              BorderWidth="2"
+                              Padding=".12"
+                              TextColor="Black"
+                              BackgroundColor="White"
+                              Margin="0,0,0,10"
+                              FontSize="18"
+                              BorderColor="Black"
+                              Grid.Row="7"
+                              Grid.Column="2"/> 
+
+                </Grid>
+   </ContentPage>

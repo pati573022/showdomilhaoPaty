@@ -47,19 +47,19 @@ public class Questao
         btResposta04 = bt04;
         btResposta05 = bt05;
     }
-   public bool VerificaResposta (int RR)
+   public bool VerificaResposta (int RespostaRespondida)
    {
-      if (RespostaRespondida == respostacorreta)
+      if (respostacorreta == RespostaRespondida)
         {
-      var botao= QualBotao (RR);
+      var botao= QualBotao (RespostaRespondida);
       botao.BackgroundColor = Colors.Green;
       return true;
 
         }
         else
         {
-            var ButtonCorreto= QualButton (respostaorreta);
-            var ButtonIncorreto= QualButton (RR);
+            var ButtonCorreto= QualBotao (respostacorreta);
+            var ButtonIncorreto= QualBotao (RespostaRespondida);
             ButtonCorreto.BackgroundColor = Colors.Yellow;
             ButtonIncorreto.BackgroundColor = Colors.Red;
             return false;
@@ -78,7 +78,8 @@ public class Questao
     return btResposta04;
     else if (RR == 5)
     return btResposta05;
-    
+     else
+     return null;
  }
  
 }

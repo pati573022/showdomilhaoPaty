@@ -1,14 +1,15 @@
 ﻿
-using Microsoft.Maui.Controls;
 
-namespace showdomilhaoPaty
-{
-    public partial class JogoDoMilhaoPage : ContentPage
+
+namespace showdomilhaoPaty;
+
+    public partial class MainPage : ContentPage
     {
-        public JogoDoMilhaoPage()
+        public MainPage()
         {
             InitializeComponent();
         }
+   
     }
-}
+
 
