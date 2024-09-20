@@ -1,4 +1,4 @@
-
+namespace showdomilhaoPaty;
 
 public class Questao
 {
@@ -6,12 +6,12 @@ public class Questao
     {
 
     }
-    public string pergunta {get; set;}
-    public string resposta1 {get; set;}
-    public string resposta2 {get; set;}
-    public string resposta3 {get; set;}
-    public string resposta4 {get;set;}
-    public string resposta5 {get; set;}
+    public string Pergunta {get; set;}
+    public string Resposta1 {get; set;}
+    public string Resposta2 {get; set;}
+    public string Resposta3 {get; set;}
+    public string Resposta4 {get;set;}
+    public string Resposta5 {get; set;}
     public int nivelpergunta {get; set;}
     public int respostacorreta {get; set;}
     private Label labelPergunta;
@@ -22,12 +22,13 @@ public class Questao
     private Button btResposta05;
     public void desenhar()
     {
-        labelPergunta.Text=pergunta;
-        btResposta01.Text=resposta1;
-        btResposta02.Text=resposta2;
-        btResposta03.Text=resposta3;
-        btResposta04.Text=resposta4;
-        btResposta05.Text=resposta5;
+        labelPergunta.Text=Pergunta;
+        btResposta01.Text=Resposta1;
+        btResposta02.Text=Resposta2;
+        btResposta03.Text=Resposta3;
+        btResposta04.Text=Resposta4;
+        btResposta05.Text=Resposta5;
+     
     }
     public Questao(Label lp, Button bt01,Button bt02, Button bt03, Button bt04, Button bt05)
     {
@@ -37,6 +38,7 @@ public class Questao
         btResposta03 = bt03;
         btResposta04 = bt04;
         btResposta05 = bt05;
+        
     }
      public void ConfigurarEstruturaDesenho(Label lp, Button bt01,Button bt02, Button bt03, Button bt04, Button bt05)
     {
