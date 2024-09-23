@@ -59,7 +59,7 @@ public class Gerenciador
     ProximaQuestao();
    }
 
-   public async void VerificaCorreta (int RespostaRespondida)
+   public async void VerificaCorreta(int RespostaRespondida)
    {
     if (QuestaoCorrente.VerificaResposta(RespostaRespondida))
     {

@@ -35,7 +35,7 @@
                  Grid.Row="1"
                  Grid.ColumnSpan="3">
 
-          <Label Text="Questão:" 
+          <Label x:Name ="labelPergunta"
                  HorizontalTextAlignment="Center" 
                  FontSize="18"
                  TextColor="Black"/>
@@ -43,8 +43,8 @@
             </Frame> 
                 
                      
-                    <Button x:Name="bnt01"
-                            Text=""
+                    <Button x:Name="btResposta01"
+                    Clicked="OnBtnResposta01Clicked"
                             BorderWidth="2"
                             BackgroundColor="#CD6EE8"
                             TextColor="Black"
@@ -55,7 +55,8 @@
                             Grid.Column="0"
                             Grid.ColumnSpan="3"/>
 
-                    <Button x:Name="bnt02" 
+                    <Button x:Name="btResposta02" 
+                    Clicked="OnBtnResposta02Clicked"
                             BorderWidth="2"
                             BackgroundColor="#CD6EE8"
                             TextColor="Black"
@@ -66,7 +67,8 @@
                             Grid.Column="0"
                             Grid.ColumnSpan="3"/>
 
-                    <Button x:Name="bnt03" 
+                    <Button x:Name="btResposta03" 
+                      Clicked="OnBtnResposta03Clicked"
                             BorderWidth="2"
                             BackgroundColor="#CD6EE8"
                             TextColor="Black"
@@ -77,7 +79,8 @@
                             Grid.Column="0"
                             Grid.ColumnSpan="3"/>
 
-                    <Button x:Name="bnt04"
+                    <Button x:Name="btResposta04"
+               Clicked="OnBtnResposta04Clicked"
                             BorderWidth="2"
                             BackgroundColor="#CD6EE8"
                             TextColor="Black"
@@ -88,7 +91,8 @@
                             Grid.Column="0"
                             Grid.ColumnSpan="3"/>
 
-                    <Button  x:Name="bnt05" 
+                    <Button  x:Name="btResposta05" 
+                     Clicked="OnBtnResposta05Clicked"
                             BorderWidth="2"
                             BackgroundColor="#CD6EE8"
                             TextColor="Black"
