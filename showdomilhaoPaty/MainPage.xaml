@@ -34,15 +34,17 @@
                  BorderColor="Black"
                  Grid.Row="1"
                  Grid.ColumnSpan="3">
-               
+
           <Label Text="Questão:" 
                  HorizontalTextAlignment="Center" 
                  FontSize="18"
                  TextColor="Black"/>
 
-            </Frame>     
-
-                    <Button Text="A-"
+            </Frame> 
+                
+                     
+                    <Button x:Name="bnt01"
+                            Text=""
                             BorderWidth="2"
                             BackgroundColor="#CD6EE8"
                             TextColor="Black"
@@ -53,7 +55,7 @@
                             Grid.Column="0"
                             Grid.ColumnSpan="3"/>
 
-                    <Button Text="B-"
+                    <Button x:Name="bnt02" 
                             BorderWidth="2"
                             BackgroundColor="#CD6EE8"
                             TextColor="Black"
@@ -64,7 +66,7 @@
                             Grid.Column="0"
                             Grid.ColumnSpan="3"/>
 
-                    <Button Text="C-"
+                    <Button x:Name="bnt03" 
                             BorderWidth="2"
                             BackgroundColor="#CD6EE8"
                             TextColor="Black"
@@ -75,7 +77,7 @@
                             Grid.Column="0"
                             Grid.ColumnSpan="3"/>
 
-                    <Button Text="D-"
+                    <Button x:Name="bnt04"
                             BorderWidth="2"
                             BackgroundColor="#CD6EE8"
                             TextColor="Black"
@@ -86,25 +88,25 @@
                             Grid.Column="0"
                             Grid.ColumnSpan="3"/>
 
-                    <Button Text="E-"
+                    <Button  x:Name="bnt05" 
                             BorderWidth="2"
                             BackgroundColor="#CD6EE8"
                             TextColor="Black"
                             Margin="0,0,0,10"
-                            FontSize="18"
+                            FontSize="14"
                             BorderColor="Black"
                             Grid.Row="6"
                             Grid.Column="0"
                             Grid.ColumnSpan="3"/>
 
                
-                        <Button Text="Corretas" 
+                        <Button  Text="Corretas" 
                                 BorderWidth="2"
                                 Padding=".12"
                                 TextColor="Black"
                                 BackgroundColor="#D29D00"
                                 Margin="0,0,0,10"
-                                FontSize="18"
+                                FontSize="16"
                                 BorderColor="Black"
                                 Grid.Row="7"
                                 Grid.Column="0"/>
@@ -115,7 +117,7 @@
                                 TextColor="Black"
                                 BackgroundColor="#D29D00"
                                 Margin="0,0,0,10"
-                                FontSize="18"
+                                FontSize="16"
                                 BorderColor="Black"
                                 Grid.Row="7"
                                 Grid.Column="1"/>
@@ -126,7 +128,7 @@
                               TextColor="Black"
                               BackgroundColor="#D29D00"
                               Margin="0,0,0,10"
-                              FontSize="18"
+                              FontSize="16"
                               BorderColor="Black"
                               Grid.Row="7"
                               Grid.Column="2"/> 
