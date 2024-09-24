@@ -9,7 +9,7 @@ public partial class MainPage : ContentPage
 	public MainPage()
 	{
 		InitializeComponent();
-    gerenciador = new Gerenciador(labelPergunta, btResposta01, btResposta02, btResposta03, btResposta04, btResposta05);
+    gerenciador = new Gerenciador(labelPergunta, btResposta01, btResposta02, btResposta03, btResposta04, btResposta05,labelPontuacao,labelNivel);
 
 	}
 
