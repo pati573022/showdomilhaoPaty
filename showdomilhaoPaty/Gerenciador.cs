@@ -1249,10 +1249,12 @@ Listaquestoes.Add(Questao100);
    public int Pontuacao {get;private set;}
 
    int NivelAtual= 0;
+   
    void Inicializar()
    {
     Pontuacao =0;
     NivelAtual = 1;
+    listaQuestoesRespondidas.Clear();
     ProximaQuestao();
    }
 
@@ -1262,6 +1264,11 @@ Listaquestoes.Add(Questao100);
     {
         await Task.Delay (1000);
         AdicionaPontuacao(NivelAtual);
+        if (NivelAtual ==10) 
+        {
+    await App.Current.MainPage.DisplayAlert("Voce chegou ao Fim" ,"muito bem!", "OK");
+}  
+        
         NivelAtual++;
         ProximaQuestao();
         

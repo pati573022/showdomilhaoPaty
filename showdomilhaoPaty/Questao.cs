@@ -29,15 +29,15 @@ public class Questao
         btResposta04.Text=Resposta4;
         btResposta05.Text=Resposta5;
 
-    this.btResposta01!.BackgroundColor = Color.FromArgb("#ebb434");
+    this.btResposta01!.BackgroundColor = Color.FromArgb("#D29D00");
     this.btResposta01!.TextColor       = Colors.White;
-    this.btResposta02!.BackgroundColor = Color.FromArgb ("#ebb434");
+    this.btResposta02!.BackgroundColor = Color.FromArgb ("#D29D00");
     this.btResposta02!.TextColor       = Colors.White;
-    this.btResposta03!.BackgroundColor = Color.FromArgb("#ebb434");
+    this.btResposta03!.BackgroundColor = Color.FromArgb("#D29D00");
     this.btResposta03!.TextColor       = Colors.White;
-    this.btResposta04!.BackgroundColor = Color.FromArgb("#ebb434");
+    this.btResposta04!.BackgroundColor = Color.FromArgb("#D29D00");
     this.btResposta04!.TextColor       = Colors.White;
-    this.btResposta05!.BackgroundColor = Color.FromArgb("#ebb434");
+    this.btResposta05!.BackgroundColor = Color.FromArgb("#D29D00");
     this.btResposta05!.TextColor       = Colors.White;
     
         
