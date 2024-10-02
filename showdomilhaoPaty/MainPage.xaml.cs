@@ -37,4 +37,10 @@ public partial class MainPage : ContentPage
   {
     gerenciador!.VerificaCorreta(5);
   }
+  private async void Retirar3(object sender, EventArgs e)
+  {
+    var ajuda = new RetiraErradas();
+    ajuda.ConfigurarEstruturaDesenho(btResposta01,btResposta02,btResposta03,btResposta04,btResposta05);
+    ajuda.RealizaAjuda(gerenciador,QuestaoCorrente);
+  }
 }

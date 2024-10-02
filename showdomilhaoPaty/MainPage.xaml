@@ -141,7 +141,8 @@
                                 Grid.Row="8"
                                 Grid.Column="0"/>
                                
-                       <Button Text="Retirar 1" 
+                       <Button Text="Retirar 3" 
+                               Clicked="Retirar3"
                                 BorderWidth="2"
                                 Padding=".12"
                                 TextColor="Black"
