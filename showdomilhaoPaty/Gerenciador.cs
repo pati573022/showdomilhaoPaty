@@ -1235,7 +1235,7 @@ Listaquestoes.Add(Questao100);
     }
    
    }
-   void ProximaQuestao()
+  public  void ProximaQuestao()
    {
     var numAleat =Random.Shared.Next (0, Listaquestoes.Count);
     while (listaQuestoesRespondidas.Contains(numAleat))
@@ -1306,6 +1306,13 @@ Listaquestoes.Add(Questao100);
         Pontuacao=1000000;
        }
 
-
+     public Questao GetQuestaoCorrente()
+     {
+        return QuestaoCorrente;
+     }
+    
+     
+     
 }
+
    

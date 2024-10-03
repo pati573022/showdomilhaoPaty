@@ -1,10 +1,16 @@
 namespace showdomilhaoPaty;
 
-public class Questao
+public class Questao:IEquatable<Questao>
 {
+
     public Questao()
     {
 
+    }
+
+    public bool Equals (Questao q)
+    {
+          return this.nivelpergunta ==q.nivelpergunta  && this.Pergunta==q.Pergunta;
     }
     public string Pergunta {get; set;}
     public string Resposta1 {get; set;}
@@ -97,5 +103,16 @@ public class Questao
      else
      return null;
  }
+
+ public void Desenha()
+ {
+    btResposta01.IsVisible = true;
+    btResposta02.IsVisible = true;
+    btResposta03.IsVisible = true;
+    btResposta04.IsVisible = true;
+    btResposta05.IsVisible = true;
+ }
+ 
+
  
 }

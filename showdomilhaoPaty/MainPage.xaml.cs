@@ -37,10 +37,20 @@ public partial class MainPage : ContentPage
   {
     gerenciador!.VerificaCorreta(5);
   }
-  private async void Retirar3(object sender, EventArgs e)
-  {
+   void OnAjudaRetirarClicked(object s, EventArgs e)
+   {
     var ajuda = new RetiraErradas();
     ajuda.ConfigurarEstruturaDesenho(btResposta01,btResposta02,btResposta03,btResposta04,btResposta05);
-    ajuda.RealizaAjuda(gerenciador,QuestaoCorrente);
-  }
-}
+    ajuda.RealizaAjuda(gerenciador.GetQuestaoCorrente());
+    (s as Button).IsVisible=false;
+    
+   }
+
+   void OnAjudaPulaClicked(object s, EventArgs e)
+   {
+    gerenciador.ProximaQuestao();
+    (s as Button).IsVisible=false;
+   }
+   
+
+   }

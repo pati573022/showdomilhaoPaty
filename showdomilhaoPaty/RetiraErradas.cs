@@ -16,14 +16,13 @@ public class RetiraErradas:IAjuda
         btResposta01.IsVisible = false;
         btResposta03.IsVisible = false;
         btResposta04.IsVisible =false;
-        btResposta05.IsVisible = false;
         break;
 
         case 3 : 
         btResposta01.IsVisible = false;
         btResposta02.IsVisible=false;
         btResposta04.IsVisible=false;
-        btResposta05.IsVisible=false;
+        
         break;
 
         case 4:
@@ -35,7 +34,6 @@ public class RetiraErradas:IAjuda
         case 5 :
         btResposta01.IsVisible = false;
         btResposta02.IsVisible = false;
-        btResposta03.IsVisible =false;
         btResposta04.IsVisible = false;
         break;
 
