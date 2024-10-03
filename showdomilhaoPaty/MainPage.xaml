@@ -68,7 +68,7 @@
             TextColor="Black"/>
 
              </Frame>
-                     
+                     <!-- belo codigo!!! não esqueça de fechar tudo na próxima :)  !-->
                     <Button x:Name="btResposta01"
                     Clicked="OnBtnResposta01Clicked"
                             BorderWidth="2"
