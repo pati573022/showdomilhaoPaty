@@ -6,6 +6,7 @@ namespace showdomilhaoPaty;
 public partial class MainPage : ContentPage
 {
   Gerenciador gerenciador;
+  int pula=0;
 	public MainPage()
 	{
 		InitializeComponent();
@@ -51,6 +52,18 @@ public partial class MainPage : ContentPage
     gerenciador.ProximaQuestao();
     (s as Button).IsVisible=false;
    }
-   
+    
+    void OnPulaClicked (object s, EventArgs a)
+    {
+      if (pula == 3)
+      (s as Button).IsVisible=false;
+      else
+      {
+      gerenciador.ProximaQuestao();
+      pula++;
+      }
+    
+    }
+  
 
-   }
+}
